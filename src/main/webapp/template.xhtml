@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title><ui:insert name="title">Default title</ui:insert></title>
+	<ui:insert name="meta" />
+	<ui:insert name="scripts" />
+	<ui:insert name="css" />
+</h:head>
+
+<h:body dir="ltr" styleClass="main-body">
+
+	<div class="layout-wrapper">
+		THE TEMPLATE
+		<ui:include src="template-included.xhtml" />
+<!-- 	<ui:insert name="detailactions" /> -->
+
+		<div class="layout-main">
+			<div class="layout-main-content">
+				<ui:insert name="content" />
+			</div>
+		</div>
+	</div>
+
+</h:body>
+
+</html>

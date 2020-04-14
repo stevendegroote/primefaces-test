@@ -7,5 +7,10 @@
         <action-listener>org.primefaces.application.DialogActionListener</action-listener>
         <navigation-handler>org.primefaces.application.DialogNavigationHandler</navigation-handler>
         <view-handler>org.primefaces.application.DialogViewHandler</view-handler>
+		<system-event-listener>
+			<system-event-listener-class>org.primefaces.test.HeadResourceListener</system-event-listener-class>
+			<system-event-class>javax.faces.event.PostAddToViewEvent</system-event-class>
+			<source-class>javax.faces.component.UIOutput</source-class>
+		</system-event-listener>
     </application>
 </faces-config>
